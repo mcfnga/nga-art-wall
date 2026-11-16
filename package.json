@@ -1,0 +1,17 @@
+{
+  "name": "nga-art-wall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Touchscreen wall of National Gallery of Art paintings with visually similar artworks",
+  "scripts": {
+    "build": "node scripts/build-data.mjs",
+    "build:data": "FORCE=1 node scripts/build-data.mjs",
+    "start": "npx --yes serve public -l 8080"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "sharp": "^0.33.5"
+  },
+  "engines": { "node": ">=20" }
+}
